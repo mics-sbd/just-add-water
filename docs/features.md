@@ -2,7 +2,7 @@
 
 ## Declarative Infrastructure
 
-Pegasus leverages terraform in order to express cloud infrastructure as
+Secure By Design leverages terraform in order to express cloud infrastructure as
 repeatable and auditable code.  By enforcing strict code-review practices and
 implementing simple CD, it means that a model of current infrastructure is
 always checked in.  As much as possible, infrastructure is created with secure
@@ -10,7 +10,7 @@ defaults.
 
 ## Cloud Native Security
 
-Pegasus uses AAD in order to ensure that applications and infrastructure is
+Secure By Design uses AAD in order to ensure that applications and infrastructure is
 protected by both AuthN and AuthZ between each other.  Groups are provided
 to ensure users can be assigned with Principle of Least Privelege in mind,
 and a Service Principal is provided to prevent direct access to infrastructure.
@@ -29,4 +29,4 @@ automatically apply configs and firewall rules to block malicious traffic.
 While we provide extensible interfaces and patterns, the default out of the box configuration
 works and is secure.  We ship an optimized dev environment in the repo to provide minimal setup, and
 provide a simple cli to deploy even the most complex network topologies at any scale.  Eliminate
-Shadow IT and tool sprawl - it's harder to circumvent Pegasus than to simply use it.
+Shadow IT and tool sprawl - it's harder to circumvent Secure By Design than to simply use it.
