@@ -1,20 +1,20 @@
-# Just Add Water
+# Secure By Design
 
-![Just Add Water](images/martians.png)
+![Secure By Design](images/martians.png)
 
 ## Instant Cloud Scale, No Matter What You Deploy
 
-Just Add Water (jaw) is a template repo designed to Securely and Reliably deploy any and all of your services with no additional effort from you.  By offloading provisioning and initial deployments here, it is possible to build an environment where a [Homogenous Infrastructure](link) requires no additional work.  This approach promotes management, maintainability, and security to be first class citizens in a codebase without distracting from important application features.
+Secure By Design (sbd) is a template repo designed to Securely and Reliably deploy any and all of your services with no additional effort from you.  By offloading provisioning and initial deployments here, it is possible to build an environment where a [Homogenous Infrastructure](link) requires no additional work.  This approach promotes management, maintainability, and security to be first class citizens in a codebase without distracting from important application features.
 
 ## Reliable Automation
 
-jaw applies DevOps best practices that ensure you go to production with confidence.  It leverages [microsoft/Requirements](https://github.com/microsoft/Requirements) in order to declaratively create and configure secure cloud infrastructure with no necessary user action.
+sbd applies DevOps best practices that ensure you go to production with confidence.  It leverages [microsoft/Requirements](https://github.com/microsoft/Requirements) in order to declaratively create and configure secure cloud infrastructure with no necessary user action.
 
 We currently are focused on Azure based infrastructure, but want to support as many environments as possible.
 
 ## Secure By Design
 
-jaw applies defense in depth to existing codebases to establish a secure baseline and improve your security posture with every deployment.
+sbd applies defense in depth to existing codebases to establish a secure baseline and improve your security posture with every deployment.
 
 ## Features
 
@@ -30,7 +30,7 @@ See [Onboarding](docs/onboarding.md) for full details.
 
 ## Dependencies
 
-We ship jaw in a VSCode dev container.  This means you only need to install the following:
+We ship sbd in a VSCode dev container.  This means you only need to install the following:
 
 - Docker
 

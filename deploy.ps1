@@ -153,9 +153,7 @@ Push-Namespace "Docker" {
             $list | % { docker push "$acr_name/$($_.ImageName)" }
         }
     }
-} `
-| Invoke-Requirement `
-| Format-Checklist
+}
 
 # Application Deployment
 Push-Namespace "Application" {

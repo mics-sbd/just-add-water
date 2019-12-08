@@ -1,3 +1,0 @@
-[submodule "app/sanity"]
-	path = app/sanity
-	url = https://github.com/mics-sbd/sanity.git
