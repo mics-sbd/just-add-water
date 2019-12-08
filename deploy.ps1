@@ -136,24 +136,9 @@ Push-Namespace "Docker" {
             Set-k8sConfig -AppPath "./app" -OutPath $OutputDir
         }
     }
-    @{
-        Describe = "Build all containers"
-        Set      = {
-            # Build all the containers found in the application manifest
-            $list = Get-Content $OutputDir/k8s.json | ConvertFrom-Json
-            $list | % { docker build -t "$acr_name/$($_.ImageName)" -f $_.Name $_.Path }
-        }
-    }
-    @{
-        Describe = "Push all containers"
-        Set      = {
-            docker login $acr_name -u $env:acr_admin -p $env:acr_password | Out-Null
-
-            $list = Get-Content $OutputDir/k8s.json | ConvertFrom-Json
-            $list | % { docker push "$acr_name/$($_.ImageName)" }
-        }
-    }
-}
+} `
+| Invoke-Requirement `
+| Format-Checklist
 
 # Application Deployment
 Push-Namespace "Application" {
